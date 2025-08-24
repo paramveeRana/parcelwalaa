@@ -1,0 +1,33 @@
+flutter_native_splash:
+  # Background color for the splash screen
+  color: "#ffca26"
+  
+  # Image to display on the splash screen
+  image: assets/images/parcelwalaa_logo.jpg
+  
+  # Color of the image (if it's a vector image)
+  color_dark: "#ffca26"
+  image_dark: assets/images/parcelwalaa_logo.jpg
+  
+  # Android 12+ specific settings
+  android_12:
+    image: assets/images/parcelwalaa_logo.jpg
+    icon_background_color: "#ffca26"
+    image_dark: assets/images/parcelwalaa_logo.jpg
+    icon_background_color_dark: "#ffca26"
+  
+  # iOS specific settings
+  ios: true
+  
+  # Android specific settings
+  android: true
+  
+  # Web specific settings
+  web: false
+  
+  # Fullscreen mode
+  fullscreen: true
+  
+  # Platform-specific settings
+  android_gravity: center
+  ios_content_mode: center

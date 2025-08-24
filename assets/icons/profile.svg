@@ -1,0 +1,22 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="profileGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFCA26;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFE55C;stop-opacity:1" />
+    </linearGradient>
+    <filter id="profileGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <circle cx="12" cy="7" r="4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="url(#profileGradient)" fill-opacity="0.2" filter="url(#profileGlow)">
+    <animate attributeName="r" values="4;4.5;4" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="fill-opacity" values="0.2;0.4;0.2" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <path d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="url(#profileGradient)" fill-opacity="0.1">
+    <animate attributeName="stroke-width" values="2.5;3;2.5" dur="3s" repeatCount="indefinite"/>
+  </path>
+</svg>

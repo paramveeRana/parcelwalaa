@@ -41,12 +41,19 @@ dependencies:
   riverpod: ^2.6.1
   flutter_riverpod: ^2.6.1
   easy_localization: ^3.0.8
-  flutter_svg: ^2.2.0
+  flutter_svg: ^2.0.13
   flutter_screenutil: ^5.9.3
   dio: 5.8.0+1
   http: ^1.5.0
   hive: ^2.2.3
   hive_flutter: ^1.1.0
+  path_provider: 2.1.5
+  shared_preferences: 2.5.3
+  flutter_native_splash: ^2.4.6
+  speech_to_text: ^6.6.0
+  permission_handler: ^11.3.0
+  sqflite: ^2.3.2
+  path: ^1.9.0
 
 
 dev_dependencies:
@@ -59,6 +66,7 @@ dev_dependencies:
   json_serializable: 6.9.5
   injectable_generator: 2.7.0
   flutter_gen_runner: 5.10.0
+  flutter_launcher_icons: ^0.14.4
 
 # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
@@ -84,7 +92,9 @@ flutter:
   uses-material-design: true
 
   # To add assets to your application, add an assets section, like this:
-  # assets:
+  assets:
+    - assets/images/
+    - assets/icons/
   #   - images/a_dot_burr.jpeg
   #   - images/a_dot_ham.jpeg
 
