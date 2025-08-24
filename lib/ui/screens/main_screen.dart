@@ -245,7 +245,7 @@ class MainScreen extends ConsumerWidget {
                       ),
                     ).paddingAll(AppTheme.paddingM),
                     // const CustomSearchBar().paddingSymmetric(vertical: 12),
-                    // const BannerCarousel().paddingSymmetric(vertical: 16),
+                    const BannerCarousel().paddingSymmetric(vertical: 16),
                     // const CategoryGrid(),
                                       ],
                   ),

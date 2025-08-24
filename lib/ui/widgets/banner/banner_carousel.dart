@@ -33,7 +33,7 @@ class _BannerCarouselState extends ConsumerState<BannerCarousel> {
     return Column(
       children: [
         SizedBox(
-          height: 180,
+          height: 200,
           child: PageView.builder(
             controller: controller.pageController,
             onPageChanged: controller.onPageChanged,
@@ -48,10 +48,7 @@ class _BannerCarouselState extends ConsumerState<BannerCarousel> {
                     gradient: const LinearGradient(
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
-                      colors: [
-                        Colors.white,
-                        AppTheme.primaryLight,
-                      ],
+                      colors: [Colors.white, AppTheme.primaryLight],
                     ),
                     borderRadius: BorderRadius.circular(AppTheme.radiusM),
                     boxShadow: [AppTheme.shadowMedium],
@@ -71,7 +68,9 @@ class _BannerCarouselState extends ConsumerState<BannerCarousel> {
                                   style: AppTheme.headingMedium,
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
-                                ).paddingSymmetric(horizontal: AppTheme.paddingL),
+                                ).paddingSymmetric(
+                                  horizontal: AppTheme.paddingL,
+                                ),
                                 Text(
                                   banner.discount,
                                   style: AppTheme.headingLarge.copyWith(
@@ -80,7 +79,9 @@ class _BannerCarouselState extends ConsumerState<BannerCarousel> {
                                   ),
                                   maxLines: 1,
                                   overflow: TextOverflow.ellipsis,
-                                ).paddingSymmetric(horizontal: AppTheme.paddingL),
+                                ).paddingSymmetric(
+                                  horizontal: AppTheme.paddingL,
+                                ),
                                 Text(
                                   banner.subtitle,
                                   style: AppTheme.bodyLarge.copyWith(
@@ -93,7 +94,8 @@ class _BannerCarouselState extends ConsumerState<BannerCarousel> {
                                   vertical: AppTheme.paddingXS,
                                 ),
                                 ElevatedButton(
-                                  onPressed: () => controller.onBannerTap(banner.id),
+                                  onPressed:
+                                      () => controller.onBannerTap(banner.id),
                                   style: AppTheme.primaryButton,
                                   child: Text(
                                     banner.buttonText,
@@ -169,12 +171,14 @@ class _BannerCarouselState extends ConsumerState<BannerCarousel> {
               ),
               decoration: BoxDecoration(
                 shape: BoxShape.circle,
-                color: controller.currentPage == index
-                    ? AppTheme.primary
-                    : AppTheme.divider,
-                boxShadow: controller.currentPage == index
-                    ? [AppTheme.shadowSmall]
-                    : null,
+                color:
+                    controller.currentPage == index
+                        ? AppTheme.primary
+                        : AppTheme.divider,
+                boxShadow:
+                    controller.currentPage == index
+                        ? [AppTheme.shadowSmall]
+                        : null,
               ),
             ),
           ),
